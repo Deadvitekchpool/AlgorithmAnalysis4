@@ -83,14 +83,14 @@ def two_opt_optimization(sol_arr,t,n,min_l):
 			frame_arr=new_arr
 			frame_arr=np.array(new_arr)
 			
-			plt.ylim(-10100,10100)
-			plt.xlim(-10100,10100)
+			plt.ylim(2000,3500)
+			plt.xlim(-9000,-4500)
 			plt.axis('off')	
 			plt.scatter(frame_arr[:,0],frame_arr[:,1],color='g',s=50)
 			plt.scatter([sol_arr[ai_][0],sol_arr[bi_][0],sol_arr[ci_][0],sol_arr[di_][0]],[sol_arr[ai_][1],sol_arr[bi_][1],sol_arr[ci_][1],sol_arr[di_][1]],color='r',s=75)
 			plt.plot(frame_arr[:,0],frame_arr[:,1],color='b')
 			plt.plot([frame_arr[0][0],frame_arr[-1][0]],[frame_arr[0][1],frame_arr[-1][1]], color='b')
-			plt.title('Travelling Salesman Problem\n points ' + ("%d" % n) +' temp=' + ("%f" % t) + '    ' 'curr Length='+ ("%f" % (min_l-diff)))
+			plt.title('Travelling Salesman Problem')#\n points ' + ("%d" % n) +' temp=' + ("%f" % t) + '    ' 'curr Length='+ ("%f" % (min_l-diff))
 			
 			global image_no
 			plt.savefig( ("%05d" % image_no) + '.png')
@@ -117,8 +117,8 @@ def sa_algorithm (input_data):
 	plt.clf();
 	plt.title('Travelling Salesman Problem\n')
 	#plt.axes([-10,1010,-10,1010])
-	plt.ylim(-10100,10100)
-	plt.xlim(-10100,10100)
+	plt.ylim(2000,3500)
+	plt.xlim(-9000,-4500)
 	plt.axis('off')
 	
 	#plotting base solution

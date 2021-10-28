@@ -1,7 +1,7 @@
 #Modules
 import numpy as np
 import matplotlib.pyplot as plt
-import SA_anime as lib
+import Simulated_annealing as lib
 
 #global variables
 input_data = []
